@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.service {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 5% 0;
+}
+
+/* ***** Service Heading ***** */
+
+.service__heading > h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #0f1032;
+    margin: 20px 10px;
+}
+.service__heading > p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 18px;
+    color: #6d6e7e;
+    margin: 20px 10px;
+}
+
+/* ***** Service Cards ***** */
+
+.service__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service__cards:first-child {
+    border-width: 1px;
+    border-color: #000;
+}
+.service__card {
+    text-align: left;
+    max-width: 20%;
+    padding: 5% 6% 3%;
+}
+
+@media screen and (max-width: 800px) {
+    .service__cards {
+        flex-direction: column;
+    }
+    .service__card {
+        max-width: fit-content;
+    }
+}
+.service__card > span {
+    margin: 20px;
+}
+.service__card > h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #0f1032;
+    margin: 20px;
+}
+.service__card > p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 18px;
+    color: #6d6e7e;
+    margin: 20px;
+    line-height: 1.7rem;
+}
+.service__card > button {
+    background-color: #003459;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 15px 40px;
+}
+.service__card > button:hover{
+    background-color: #000;
+}
+@media screen and (max-width: 1140px) {
+    .service__card {
+        padding: 2% 4% 1%;
+    }
+    .service__card > span {
+        margin: 20px 0px;
+    }
+    .service__card > h2 {
+        margin: 20px 0px;
+        font-size: 19px;
+    }
+    .service__card > p {
+        margin: 20px 0px;
+        font-size: 16px;
+    }
+    .service__card > button {
+        margin: 20px 0px;
+    }
+}

@@ -1,13 +1,15 @@
+import Service from "./components/servic/Service";
 
-
-import './App.css';
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+    return (
+        <>
+            <div className="app">
+                <Service />
+            </div>
+        </>
+    );
 }
 
 export default App;
