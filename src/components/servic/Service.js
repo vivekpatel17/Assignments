@@ -24,9 +24,9 @@ function Service() {
                             <p>{res.description}</p>
                             <button>
                                 <span>Learn More</span>
-                                {/* <span>
+                                <span>
                                     <ArrowCircleRightRoundedIcon />
-                                </span> */}
+                                </span>
                             </button>
                         </div>
                     ))}

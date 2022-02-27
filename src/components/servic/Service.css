@@ -7,8 +7,15 @@
     max-width: 80%;
     padding: 5% 0;
 }
-
+@media screen and (max-width: 1000px) {
+    .service {
+        max-width: 95%;
+    }
+}
 /* ***** Service Heading ***** */
+.service__heading {
+    margin: 20px 0 50px;
+}
 
 .service__heading > h2 {
     font-family: "Raleway", sans-serif;
@@ -31,19 +38,37 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.service__cards:first-child {
-    border-width: 1px;
-    border-color: #000;
+.service__cards > div:nth-child(3n + 1) {
+    border: #c0c0c0 solid;
+    border-width: 0 1px 1px 0;
+}
+.service__cards > div:nth-child(3n + 2) {
+    border: #c0c0c0 solid;
+    border-width: 0 0 1px 0;
+}
+.service__cards > div:nth-child(3n) {
+    border: #c0c0c0 solid;
+    border-width: 0px 0 1px 1px;
+}
+.service__cards > div:nth-last-child(3),
+.service__cards > div:nth-last-child(2),
+.service__cards > div:nth-last-child(1) {
+    border-bottom: none;
 }
 .service__card {
     text-align: left;
     max-width: 20%;
     padding: 5% 6% 3%;
+    transition: border 300ms;
 }
 
 @media screen and (max-width: 800px) {
     .service__cards {
         flex-direction: column;
+    }
+    .service__cards > div:nth-child(n) {
+        border: none;
+        border-width: 0;
     }
     .service__card {
         max-width: fit-content;
@@ -75,9 +100,18 @@
     margin: 20px;
     padding: 15px 40px;
 }
-.service__card > button:hover{
+.service__card > button > span:last-child {
+    margin: 10px;
+}
+.service__card > button:hover {
     background-color: #000;
 }
+@media screen and (min-width: 1140px) {
+    .service__card > button {
+        width: 95%;
+    }
+}
+
 @media screen and (max-width: 1140px) {
     .service__card {
         padding: 2% 4% 1%;
